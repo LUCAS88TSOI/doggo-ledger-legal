@@ -1,6 +1,6 @@
 <!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>狗狗記賬 私隱政策 Privacy Policy</title><style>body{font-family:-apple-system,system-ui,"PingFang HK","Microsoft JhengHei",sans-serif;max-width:760px;margin:0 auto;padding:28px 20px 80px;line-height:1.7;color:#2b2b2b;background:#faf7f1}h1{font-size:1.6rem}h2{font-size:1.2rem;margin-top:1.8em}h3{font-size:1.05rem;margin-top:1.4em}code{background:#efe9df;padding:1px 5px;border-radius:4px;font-size:.92em}hr{border:none;border-top:1px solid #e3dccf;margin:2em 0}a{color:#c8732f}ul{padding-left:1.2em}li{margin:.2em 0}.home{display:inline-block;margin-bottom:1.2em;color:#c8732f;text-decoration:none}</style></head><body><a class="home" href="./">← 狗狗記賬 Doggo Ledger</a>
 <h1>狗狗記賬 (Doggo Ledger) — Privacy Policy / 私隱政策</h1>
-<p><em>Last updated / 最後更新: 24 June 2026</em></p>
+<p><em>Last updated / 最後更新: 30 August 2026</em></p>
 <hr>
 <h2>English</h2>
 <p>Doggo Ledger (&quot;the App&quot;) respects your privacy. This policy explains what we collect, how we use and protect it, and your rights.</p>
@@ -10,17 +10,18 @@
 <li><strong>Ledger data:</strong> the expense / income amounts, categories, titles, notes, dates and savings goals you enter.</li>
 <li><strong>Receipt images:</strong> photos you capture or select to upload.</li>
 <li><strong>Voice clips:</strong> audio you record to log expenses.</li>
+<li><strong>AI text inputs:</strong> transaction descriptions you import, bank-message text you optionally forward for parsing, and aggregate spending figures used to generate short in-app summaries.</li>
 <li><strong>Preferences:</strong> e.g. daily reminders, haptics.</li>
 </ul>
 <h3>2. How we use it</h3>
 <ul>
 <li>To provide the core bookkeeping, spending-statistics and pet-raising features.</li>
-<li>To automatically recognise receipt images and voice via a third-party AI service (<strong>Google Gemini</strong>), turning them into ledger entries.</li>
+<li>To recognise receipt images and voice via <strong>Google Gemini</strong>, and to parse or classify optional text inputs via <strong>OpenRouter</strong> and the downstream AI provider selected by our OpenRouter preset.</li>
 <li>To sync your data across devices once you sign in.</li>
 </ul>
 <h3>3. Sharing</h3>
 <ul>
-<li><strong>Cloud storage &amp; processing:</strong> the App uses <strong>Supabase</strong> for backend storage; receipt images and voice clips are sent to <strong>Google Gemini</strong> for recognition.</li>
+<li><strong>Cloud storage &amp; processing:</strong> the App uses <strong>Supabase</strong> for backend storage. Receipt images and voice clips are sent to <strong>Google Gemini</strong>. Text needed for SMS parsing, description classification and short spending summaries is sent to <strong>OpenRouter</strong>, which routes it to a downstream AI model provider selected by our preset. Each provider processes and may retain data according to its own privacy and retention policies.</li>
 <li>We do <strong>not</strong> sell your personal data and do <strong>not</strong> use it for cross-app advertising tracking.</li>
 <li>We do not disclose your data to any other third party except the service providers above, or where required by law.</li>
 </ul>
@@ -59,17 +60,18 @@
 <li><strong>記賬資料：</strong> 你輸入嘅開支／收入金額、分類、標題、備註、時間，以及存錢目標。</li>
 <li><strong>單據相片：</strong> 你影低或選取上載嘅單據圖片。</li>
 <li><strong>語音片段：</strong> 你錄製用嚟記賬嘅語音。</li>
+<li><strong>AI 文字輸入：</strong> 你匯入嘅交易描述、選擇轉送作解析嘅銀行短訊文字，以及用於產生應用內簡短摘要嘅彙總開支數字。</li>
 <li><strong>偏好設定：</strong> 例如每日提醒、震動回饋等。</li>
 </ul>
 <h3>2. 我哋點樣使用呢啲資料</h3>
 <ul>
 <li>提供記賬、開支統計、養成狗狗等核心功能。</li>
-<li>透過第三方人工智能服務（<strong>Google Gemini</strong>）自動辨識單據相片同語音內容，轉換成記賬資料。</li>
+<li>透過 <strong>Google Gemini</strong> 辨識單據相片同語音；透過 <strong>OpenRouter</strong> 及由我哋 OpenRouter preset 選擇嘅下游 AI 服務供應商解析或分類你選擇提供嘅文字。</li>
 <li>喺你登入之後，跨裝置同步你嘅資料。</li>
 </ul>
 <h3>3. 資料分享</h3>
 <ul>
-<li><strong>雲端儲存與處理：</strong> 本應用程式使用 <strong>Supabase</strong> 作後端儲存；單據圖片同語音會傳送至 <strong>Google Gemini</strong> 作辨識用途。</li>
+<li><strong>雲端儲存與處理：</strong> 本應用程式使用 <strong>Supabase</strong> 作後端儲存。單據圖片同語音會傳送至 <strong>Google Gemini</strong>；短訊解析、描述分類同簡短開支摘要所需嘅文字會傳送至 <strong>OpenRouter</strong>，再由它按我哋嘅 preset 轉送至選定嘅下游 AI 模型供應商。各供應商會按自身嘅私隱同資料保留政策處理及可能保留資料。</li>
 <li>我哋唔會出售你嘅個人資料，亦唔會用作跨應用程式嘅廣告追蹤。</li>
 <li>除上述服務供應商外，我哋唔會向任何第三方披露你嘅資料，除非法律另有要求。</li>
 </ul>
