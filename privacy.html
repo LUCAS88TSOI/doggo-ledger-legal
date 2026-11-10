@@ -1,6 +1,6 @@
 <!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>狗狗記賬 (Doggo Ledger) — Privacy Policy / 私隱政策 / 隐私政策</title><style>body{font-family:-apple-system,system-ui,"PingFang HK","PingFang TC","PingFang SC","Microsoft JhengHei",sans-serif;max-width:760px;margin:0 auto;padding:28px 20px 80px;line-height:1.7;color:#2b2b2b;background:#faf7f1}h1{font-size:1.6rem}h2{font-size:1.2rem;margin-top:1.8em}h3{font-size:1.05rem;margin-top:1.4em}code{background:#efe9df;padding:1px 5px;border-radius:4px;font-size:.92em}hr{border:none;border-top:1px solid #e3dccf;margin:2em 0}a{color:#c8732f}ul{padding-left:1.2em}li{margin:.2em 0}.home{display:inline-block;margin-bottom:1.2em;color:#c8732f;text-decoration:none}</style></head><body><a class="home" href="./">← 狗狗記賬 Doggo Ledger</a>
 <h1>狗狗記賬 (Doggo Ledger) — Privacy Policy / 私隱政策 / 隐私政策</h1>
-<p><em>Last updated / 最後更新 / 最后更新: 7 November 2026</em></p>
+<p><em>Last updated / 最後更新 / 最后更新: 9 November 2026</em></p>
 <hr>
 <h2>English</h2>
 <p>Doggo Ledger ("the App") respects your privacy. This policy explains what we collect, how we use and protect it, where it is processed, and your rights. It applies to users in every country or region where the App is offered, including Hong Kong, Macau, Taiwan, Malaysia and Singapore.</p>
@@ -27,6 +27,7 @@
 <li>To sync your data across devices once you sign in.</li>
 <li>To measure how features are used via <strong>TelemetryDeck</strong>, in order to improve the App.</li>
 <li>To find and fix crashes using crash and diagnostic data, and to verify and manage your subscriptions and purchases via <strong>RevenueCat</strong>.</li>
+<li>To stop the same App Store purchase granting bone coins twice, to handle refunds, and to calculate overall sales and AI cost figures.</li>
 <li>We only use your data for these purposes. If you do not provide certain data (for example, you never upload a receipt), the related feature simply will not be available; the rest of the App still works.</li>
 </ul>
 <h3>4. Sharing</h3>
@@ -48,11 +49,20 @@
 <li>Data stored on our servers is protected by Row Level Security — each user can access only their own data.</li>
 <li>All network traffic uses HTTPS / TLS encryption.</li>
 <li>Analysis results of automatic logging (e.g. amount, merchant, last four card digits, category — not the message text itself) are stored with your account so they can be retrieved again after a network interruption, and are deleted when you delete your account.</li>
+<li>Statement analysis results (e.g. merchant, date, amount, currency, category) are stored with your account to diagnose problems, and are deleted when you delete your account.</li>
 </ul>
 <h3>7. Retention &amp; deletion</h3>
 <ul>
-<li>We keep your data until you delete it or delete your account.</li>
-<li>You can <strong>permanently delete</strong> your account and all related data on our servers (ledger, receipts, voice, etc.) at any time via <strong>Settings → Delete Account</strong>. This is irreversible.</li>
+<li>We keep your data until you delete it or delete your account, except for the records listed below.</li>
+<li>You can <strong>permanently delete</strong> your account and all related data on our servers (ledger, receipts, voice, bone coin balance, etc.) at any time via <strong>Settings → Delete Account</strong>, except for the records listed in the next point. This is irreversible.</li>
+<li>After you delete your account, the records below are kept. They do not include your email, ledger, receipts or voice clips:
+<ul>
+<li>Bone coin purchase records: transaction ID, product, number of coins, transaction time and refund status. Used to stop the same purchase granting coins again on a new account, to handle refunds, and to calculate overall sales figures. These records are no longer linked to your account.</li>
+<li>Transaction notifications sent by Apple (e.g. purchases, renewals, expiries, refunds): the transaction ID and Apple-signed transaction details such as product, price and expiry date, which may include the identifier of your deleted account. Used to handle refunds and reconcile figures. Notifications Apple still sends after you delete your account are stored in the same way.</li>
+<li>Subscription transactions moved to another account (if any): used to withdraw the current holder's access if a refund happens later.</li>
+<li>Statistics: AI usage (feature, usage, cost, detached from your account) and a copy of usage analytics (including the scrambled device code). Used to calculate costs and improve the App.</li>
+</ul></li>
+<li>These records currently have no automatic deletion date. For questions, contact us as described in section 9.</li>
 <li>Data already sent to the usage analytics, crash reporting and subscription verification services is handled under each service's retention policy; email us if you would like it deleted.</li>
 <li>You can also delete individual records.</li>
 </ul>
@@ -106,6 +116,7 @@
 <li>在您登入後，跨裝置同步您的資料。</li>
 <li>透過 TelemetryDeck 統計各功能的使用情況，用以改善本應用程式。</li>
 <li>透過當機與診斷資料找出並修正當機問題；透過 RevenueCat 核實及管理您的訂閱與購買。</li>
+<li>防止同一筆 App Store 購買重複發放骨頭幣、處理退款，以及計算整體銷售與 AI 成本數字。</li>
 <li>我們只會將資料用於上述目的。如您不提供某些資料（例如從不上傳單據），相關功能將無法使用，但不影響應用程式其他功能。</li>
 </ul>
 <h3>4. 資料分享</h3>
@@ -127,11 +138,20 @@
 <li>您儲存於我們伺服器的資料受「列級安全（Row Level Security）」保護——每位用戶只能存取自己的資料。</li>
 <li>所有網路傳輸均使用 HTTPS／TLS 加密。</li>
 <li>自動記帳的分析結果（例如金額、商家、卡號末四碼、分類，不包括訊息原文）會連同您的帳戶儲存，以便網路中斷後重新取回；刪除帳戶時一併刪除。</li>
+<li>帳單分析結果（例如商家、日期、金額、貨幣、分類）會連同您的帳戶儲存，用於診斷問題；刪除帳戶時一併刪除。</li>
 </ul>
 <h3>7. 資料保留與刪除</h3>
 <ul>
-<li>我們會保留您的資料，直至您自行刪除或刪除帳戶為止。</li>
-<li>您可隨時在「<strong>設定 → 刪除帳戶</strong>」永久刪除帳戶，以及我們伺服器上所有相關資料（包括記帳、單據、語音等）。此操作無法復原。</li>
+<li>我們會保留您的資料，直至您自行刪除或刪除帳戶為止；下列記錄除外。</li>
+<li>您可隨時在「<strong>設定 → 刪除帳戶</strong>」永久刪除帳戶，以及我們伺服器上所有相關資料（包括記帳、單據、語音、骨頭幣餘額等），但下一點列明的記錄除外。此操作無法復原。</li>
+<li>刪除帳戶後，以下記錄會保留。這些記錄不包括您的電郵、帳目、單據或語音：
+<ul>
+<li>骨頭幣購買記錄：交易編號、商品、骨頭幣數量、交易時間與退款狀態。用於防止同一筆購買在新帳戶重複發放骨頭幣、處理退款，以及計算整體銷售數字。這些記錄本身不再連到您的帳戶。</li>
+<li>Apple 傳來的交易通知（例如購買、續訂、到期、退款）：交易編號與 Apple 簽署的交易資料，例如商品、價格與到期日，其中可能包含您已刪除帳戶的識別碼。用於處理退款與核對數字。刪除帳戶後，Apple 仍傳來的通知也會照常保存。</li>
+<li>已轉至其他帳戶的訂閱交易記錄（如有）：用於日後退款時收回現持有人的權益。</li>
+<li>統計記錄：AI 用量（功能、用量、成本，已與帳戶解除連結）與使用分析副本（包括經打亂處理的裝置代號）。用於計算成本與改善本應用程式。</li>
+</ul></li>
+<li>上述記錄目前沒有設定自動刪除日期。如有疑問，可依第 9 節聯絡我們。</li>
 <li>已傳送至使用分析、當機報告與訂閱核實服務的資料，會依該服務的保留政策處理；如需刪除，可透過電郵聯絡我們。</li>
 <li>您也可以逐筆刪除個別記錄。</li>
 </ul>
@@ -185,6 +205,7 @@
 <li>在您登录后，跨设备同步您的资料。</li>
 <li>通过 TelemetryDeck 统计各功能的使用情况，用以改善本应用程序。</li>
 <li>通过崩溃与诊断资料找出并修复崩溃问题；通过 RevenueCat 核实及管理您的订阅与购买。</li>
+<li>防止同一笔 App Store 购买重复发放骨头币、处理退款，以及计算整体销售与 AI 成本数字。</li>
 <li>我们只会将资料用于上述目的。如您不提供某些资料（例如从不上传单据），相关功能将无法使用，但不影响应用程序其他功能。</li>
 </ul>
 <h3>4. 资料分享</h3>
@@ -206,11 +227,20 @@
 <li>您存储于我们服务器的资料受“行级安全（Row Level Security）”保护——每位用户只能访问自己的资料。</li>
 <li>所有网络传输均使用 HTTPS／TLS 加密。</li>
 <li>自动记账的分析结果（例如金额、商家、卡号末四位、分类，不包括消息原文）会连同您的账户存储，以便网络中断后重新取回；删除账户时一并删除。</li>
+<li>账单分析结果（例如商家、日期、金额、货币、分类）会连同您的账户存储，用于诊断问题；删除账户时一并删除。</li>
 </ul>
 <h3>7. 资料保留与删除</h3>
 <ul>
-<li>我们会保留您的资料，直至您自行删除或删除账户为止。</li>
-<li>您可随时在“<strong>设置 → 删除账户</strong>”永久删除账户，以及我们服务器上所有相关资料（包括记账、单据、语音等）。此操作无法恢复。</li>
+<li>我们会保留您的资料，直至您自行删除或删除账户为止；下列记录除外。</li>
+<li>您可随时在“<strong>设置 → 删除账户</strong>”永久删除账户，以及我们服务器上所有相关资料（包括记账、单据、语音、骨头币余额等），但下一点列明的记录除外。此操作无法恢复。</li>
+<li>删除账户后，以下记录会保留。这些记录不包括您的电子邮箱、账目、单据或语音：
+<ul>
+<li>骨头币购买记录：交易编号、商品、骨头币数量、交易时间与退款状态。用于防止同一笔购买在新账户重复发放骨头币、处理退款，以及计算整体销售数字。这些记录本身不再关联您的账户。</li>
+<li>Apple 传来的交易通知（例如购买、续订、到期、退款）：交易编号与 Apple 签署的交易资料，例如商品、价格与到期日，其中可能包含您已删除账户的识别码。用于处理退款与核对数字。删除账户后，Apple 仍传来的通知也会照常保存。</li>
+<li>已转至其他账户的订阅交易记录（如有）：用于日后退款时收回现持有人的权益。</li>
+<li>统计记录：AI 用量（功能、用量、成本，已与账户解除关联）与使用分析副本（包括经打乱处理的设备代号）。用于计算成本与改善本应用程序。</li>
+</ul></li>
+<li>上述记录目前没有设定自动删除日期。如有疑问，可按第 9 节联系我们。</li>
 <li>已发送至使用分析、崩溃报告与订阅核实服务的资料，会按该服务的保留政策处理；如需删除，可通过邮箱联系我们。</li>
 <li>您也可以逐笔删除个别记录。</li>
 </ul>
